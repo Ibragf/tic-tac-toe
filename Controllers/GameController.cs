@@ -11,7 +11,7 @@ using tic_tac_toe.Services;
 
 namespace tic_tac_toe.Controllers
 {
-    [Route("api/game")]
+    [Route("api/games")]
     [ApiController]
     [EnableCors("AllowAnyOrigin")]
     public class GameController : ControllerBase
@@ -36,7 +36,7 @@ namespace tic_tac_toe.Controllers
             if(moveResult.Success)
             {
                 var secondPlayer = gameService.Lobby.Players.FirstOrDefault(x => x.Id != move.PlayerId);
-                await hubContext.Clients.Client(secondPlayer!.ConnectionId).SendAsync("MadeMove", moveResult);
+                await hubContext.Clients.Client(secondPlayer!.ConnectionId).SendAsync("madeMove", moveResult);
                 return Ok(moveResult);
             }
             else
@@ -90,7 +90,7 @@ namespace tic_tac_toe.Controllers
             var model = new { game, lobby.Scores };
             await hubContext.Clients.Clients(lobby.Players[0].ConnectionId, lobby.Players[1].ConnectionId).SendAsync("receiveGame", model, "Game created");
 
-            return Ok(game.Id);
+            return Ok();
         }
 
         [HttpPut("restart")]
