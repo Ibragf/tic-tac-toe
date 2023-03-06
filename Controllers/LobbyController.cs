@@ -101,7 +101,7 @@ namespace tic_tac_toe.Controllers
             }
 
             string encodedName = HttpUtility.HtmlEncode(player.Name);
-            await hubContext.Clients.Client(secondPlayer.ConnectionId).SendAsync("receiveMessage", $"{encodedName} joined the lobby");
+            await hubContext.Clients.Client(secondPlayer.ConnectionId).SendAsync("playerJoined", encodedName);
 
             return Ok();
         }

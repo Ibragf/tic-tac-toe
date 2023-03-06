@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "I/3Mow7FBnmgr0NrngUspUuL/cVnJnbsO4+oMqx7cUUVR6ZtzbRDx7UTLBibyEhfj52KRlRPGB3vFbAF215Hkw==",
+  "dgSpecHash": "Hg4w7/1elUYDPLKI9wxagH8BpaaNR0yI6kiez+jwGzYFboTGwO3AXrmwU7+tw7fJl17I88kZV4Tb0Y7V52UmkQ==",
   "success": true,
-  "projectFilePath": "D:\\GitDesktop\\tic-tac-toe\\tic-tac-toe\\tic-tac-toe.csproj",
+  "projectFilePath": "D:\\GitDesktop\\tic-tac\\tic-tac-toe\\tic-tac-toe.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Гаджи\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Гаджи\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.14\\microsoft.entityframeworkcore.6.0.14.nupkg.sha512",

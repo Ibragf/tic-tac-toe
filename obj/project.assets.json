@@ -1128,11 +1128,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitDesktop\\tic-tac-toe\\tic-tac-toe\\tic-tac-toe.csproj",
+      "projectUniqueName": "D:\\GitDesktop\\tic-tac\\tic-tac-toe\\tic-tac-toe.csproj",
       "projectName": "tic-tac-toe",
-      "projectPath": "D:\\GitDesktop\\tic-tac-toe\\tic-tac-toe\\tic-tac-toe.csproj",
+      "projectPath": "D:\\GitDesktop\\tic-tac\\tic-tac-toe\\tic-tac-toe.csproj",
       "packagesPath": "C:\\Users\\Гаджи\\.nuget\\packages\\",
-      "outputPath": "D:\\GitDesktop\\tic-tac-toe\\tic-tac-toe\\obj\\",
+      "outputPath": "D:\\GitDesktop\\tic-tac\\tic-tac-toe\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
