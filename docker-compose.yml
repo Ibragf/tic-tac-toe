@@ -1,0 +1,33 @@
+﻿version: '3.9'
+
+services:
+ nginx:
+  image: nginx
+  ports:
+   - "443:443"
+   - "80:81"
+  volumes:
+   - /etc/ssl/nginx.conf:/etc/nginx/nginx.conf
+   - /etc/ssl/galaur.ru.crt:/etc/ssl/galaur.ru.crt
+   - /etc/ssl/galaur.ru.key:/etc/ssl/galaur.ru.key
+  depends_on:
+   - tic_tac_toe
+
+ postgres_db:
+  image: postgres
+  restart: always
+  environment:
+   POSTGRES_USER: "user"
+   POSTGRES_PASSWORD: "12345678"
+   POSTGRES_DB: "mydb"
+  volumes:
+   - ~/db:/var/lib/postgresql/data
+  privileged: true
+
+ tic_tac_toe:
+  build:
+   context: .
+   dockerfile: Dockerfile
+  restart: always
+  depends_on:
+   - postgres_db

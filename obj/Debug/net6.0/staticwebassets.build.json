@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "AFjy1EJH5kVD6Hm7wcV3s9OWbccHvgn8mtZN6svMvEw=",
+  "Source": "tic-tac-toe",
+  "BasePath": "_content/tic-tac-toe",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
